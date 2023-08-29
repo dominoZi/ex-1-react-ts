@@ -62,7 +62,9 @@ body {
   position: relative;
   vertical-align: middle;
   transition: all 0.25s;
-  &:before,
+  &:before {
+    content: "";
+  }
   &:after {
     content: "";
   }

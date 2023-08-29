@@ -12,9 +12,9 @@ const getBazarekCategories = () =>
     "https://api-eko-bazarek.azurewebsites.net/api/products/categories"
   );
 
-const getProduct = (id: string) =>
+const getProductById = (id: string) =>
   axios.get<unknown>(
     `https://api-eko-bazarek.azurewebsites.net/api/products/${id}`
   );
 
-export { getBazarekCategories, getBazarekType, getProduct };
+export { getBazarekCategories, getBazarekType, getProductById };
